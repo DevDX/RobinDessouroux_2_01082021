@@ -81,6 +81,7 @@ nav a:hover
 {
     color:white;
     background-color: blueviolet;
+    font-size: 1.25rem;
 }
 
 
@@ -287,51 +288,64 @@ margin-bottom: 50px;
 
 .div_art
 {
-    /*background-color: skyblue;*/
-    border:solid black;
+    /*background-color: skyblue;
+    border:solid black;*/
     border-radius: 25px;
     width:250px;
     padding-bottom:25px;
     padding-top:25px;
-    height:33%;
-    
-    
+    height:33%;    
 }  
 
-.top_1
+.div_art:hover
+{
+    color:white;  
+    border:solid white; 
+    background-color:blueviolet;
+}
+
+.class_top
 {
     width:100%;
     height:60%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     /*background-color: white;*/
+    cursor: pointer;
 }
 
-.bottom_1
+.class_bottom
 {
     width:100%;
     height:60%;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     /*background-color: white;*/
+    cursor: pointer;
 }
 
 
-#div_top1
-{
+/*#div_top1
+{*/
     /*background-color:rgb(245, 26, 26);*/
-    border:solid rgba(35, 17, 85, 0.075);  
+    /*border:solid rgba(35, 17, 85, 0.075);  
     padding-top:0px;
-}
+}*/
 
-#div_top2
-{
+/*#div_top2
+{*/
     /*background-color:rgb(236, 95, 154);*/
-    border:solid rgba(35, 17, 85, 0.075);  
+    /*border:solid rgba(35, 17, 85, 0.075); 
     padding-top:0px;
+}*/
+
+.div_top
+{
+    padding-top:0px;
+    border:solid darkgray;   
 }
 
-.bckcol_grey
+.bckcol_gray
 {
     color:grey;
     font-size:1rem;
