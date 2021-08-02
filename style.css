@@ -1,0 +1,254 @@
+/* ------- RESET ------- */
+*{box-sizing: border-box;}
+
+html, body, ul, li, h1, h2, h3, h4, p, img{margin: 0;padding: 0;}
+
+body
+{
+    font-size: 16px;
+    font-family: 'Raleway',sans-serif;
+    width:1440px;
+}
+
+h1, h2, h3, p{font-size: 1rem;}
+
+img{display: block;}
+
+a{color: black;text-decoration: none;}
+
+/*ul{list-style-type: none;}*/
+
+
+/* -------- Fin RESET ---*/
+
+
+/* HEADER */
+header
+{
+    margin-top:55px;
+    margin-bottom:100px;
+    flex-direction:row;
+    /*background-color: aqua;
+    border:solid grey;*/
+    
+}
+
+.flex_box
+{
+    display:flex;
+    justify-content:space-between;
+}
+
+div
+{
+    /*border:solid lightgreen;*/
+    flex-basis:50%;
+    height:60px;
+}
+
+#logo_small_size
+{
+    width:20%; 
+    /*border:solid green;*/
+    margin:0;
+    font-size: 18px;
+}
+
+nav
+{
+    /*border:solid red;*/
+    flex-basis:100%;
+    height:95%;
+}
+
+ul
+{
+    /*border:solid yellow;*/ 
+    flex-basis:50%;
+    height:75%;
+    list-style: none;  
+    margin:0 2px auto auto;
+    
+}
+
+li
+{
+    /*border:solid pink;*/
+    font-size: 0.9rem;
+    font-weight:bold;
+}
+
+ /* SECTION SEARCH */
+
+#sec_search
+{
+    margin:50px 0 50px 0px; 
+    /*border:solid orange;
+    background-color: coral;*/ 
+}
+
+h1
+{
+    font-size:1.25rem;
+    font-family: 'Raleway',sans-serif;
+}
+
+#div_search
+{
+    display: flex; 
+    flex-direction: column;
+    height:65px;
+    width:21.75%;
+    margin:50px 0 50px 30px;
+    justify-content:center;
+    font-size:1.5rem;
+    font-family: 'Raleway',sans-serif;
+    padding: 0px;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+#posi_town
+{
+    background-color: darkgrey;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;  
+    width:50px;  
+    font-size:20px;
+    text-align:center;
+    height:65px;
+    align-content: center;
+    padding-top: 20px;
+   
+}
+
+#town
+{
+    text-align:start;
+    border-right:hidden;
+    border-left:hidden;
+    height:65px;
+    font-size:20px;
+    font-family: 'Raleway',sans-serif;
+}
+
+#btn
+{
+    background-color: blue;
+    color:white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height:65px;
+    font-size:0.75rem;
+    font-family: 'Raleway',sans-serif;
+}
+
+span
+{
+    text-transform: uppercase; 
+    font-family: 'Raleway',sans-serif;
+}
+
+#div_filter
+{
+    /*background-color: yellow;
+    border:solid purple;*/ 
+    margin-top:50px;
+    margin-bottom:50px;
+    height:50px;
+}
+
+#div_info
+{
+    display:flex;
+    justify-content:space-between;
+    /*color: red;
+    background-color: yellow;*/
+    width:550px;
+}
+
+.chg_hover:hover
+{
+    color: red;
+    font-size: 1rem;
+    font-weight:bold;
+}
+
+.flex_box_special
+{
+    display: flex; 
+    margin:0px 0px 5px 80px;
+    padding-left:20px;
+    /*justify-content:flex-start;*/
+    font-size:1rem;
+    font-family: 'Raleway',sans-serif;
+    background-color: white;
+    border-color:  black;
+    border-style:inset;
+    align-content:space-around;
+    border-radius: 25px;
+    height: 30px;
+}
+
+#most_popular
+{
+    background-color: beige;
+    border: solid grey;
+    height: auto;
+    width:300px;
+    border-radius: 25px;
+}
+
+.flex_box_art
+{
+    display: flex; 
+    flex-wrap:wrap;
+    flex-direction: column;
+    margin:0px 0px 50px 40px;
+    padding-left:20px;
+    padding-top:25px;
+    padding-bottom:25px;
+    justify-content:space-between;
+    font-size:1rem;
+    font-family: 'Raleway',sans-serif;
+    background-color: lightgreen;
+    border:solid darkgreen;
+    align-content:space-evenly;
+    border-radius: 25px;
+    
+    
+}
+
+.div_art
+{
+    background-color: skyblue;
+    border:solid darkblue;
+    border-radius: 25px;
+    height:20px; 
+    width:150px;
+}  
+
+#art_acc
+{
+    background-color: yellow;
+    border:solid black;  
+    height: 675px;
+    width: 1025px;   
+}
+
+#sec_activities
+{
+    background-color: orangered;
+    border:solid black;   
+    border-radius: 25px;
+    margin:50px 0px 50px 40px;
+}
+
+footer
+{
+    display:flex;
+    background-color: powderblue;
+    border:solid black;    
+    height:200px;
+    margin-top: 80px;
+}

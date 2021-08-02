@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        
+        <meta charset="utf-8">
+        <title>draft P2</title>
+        <link rel="stylesheet" href="style.css">
+        
+        <!-- police Raleway --> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,400;1,200&display=swap" rel="stylesheet">     
+        
+        <!-- récupération des logos -->
+        <script src="https://kit.fontawesome.com/e7811f4cb9.js" crossorigin="anonymous"></script>  
+        
+    
+    </head>
+    
+    <body>
+            
+        <!-- Header Titre du site de l'agence Reservia avec 3 liens --> 
+        <header class="flex_box">
+            <div class="flex_box">
+                <!-- logo Reservia -->
+                <img id="logo_small_size" src="images/logo/Reservia@3x.png" alt="logo Reservia">
+            </div>
+            <div class="flex_box">
+                <nav class="flex_box"> 
+                    <ul class="flex_box">
+                        <li><a href="#sec_accommodation">Hébergements</a></li> 
+                        <li><a href="#sec_activities">Activités</a></li> 
+                        <li><a href="#">S'inscrire</a></li> 
+                    </ul>   
+                </nav>
+            </div>            
+        </header>
+        <!-- Fin Header Titre du site de l'agence Reservia avec 3 liens --> 
+        
+        <main>
+            <!-- Section search ----------------------------------------------> 
+            <section id="sec_search">
+                
+                <div>
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1><p>En plein centre ville ou en pleine nature</p>
+                </div>
+                
+                <div id="div_search">
+                    <i id="posi_town" class="fas fa-map-marker-alt"></i>
+                    <input type="text" id="town" name="town" placeholder="Marseille,France" >
+                    <button id="btn">Rechercher</button>
+                </div>
+                
+                
+                <div id="div_filter"class="flex_box">
+                    <div ><h2>Filtres</h2></div>
+                    <div class="flex_box_special" ><i class="fas fa-money-bill-wave"></i><p class="chg_hover"><span>é</span>conomique</p></div>
+                    <div class="flex_box_special"><i class="fas fa-child"></i> <p class="chg_hover"><span>f</span>amilial</p></div>
+                    <div class="flex_box_special"><i class="fas fa-heart"></i><p class="chg_hover"><span>r</span>omantique</p></div>
+                    <div class="flex_box_special"><i class="fas fa-dog"></i> <p class="chg_hover"><span>a</span>nimaux autorisés</p></div>
+                </div>
+                
+                <div id="div_info">
+                    <i class="fas fa-info-circle"></i> <p>Plus de 500 logements sont disponibles dans cette ville</p>
+                </div>
+                
+            
+            </section>
+            <!-- Fin Section search ----------------------------------------------> 
+            
+            
+            <section id="sec_accommodation"  class="flex_box">
+                <!--<div><h2>Hébergements à Marseille</h2></div>-->
+                
+                <article id="art_acc" class="flex_box_art">
+                    <div class="div_art">div pour image 1<p>texte1</p></div>
+                    <div class="div_art">div pour image 2<p>texte2</p></div>
+                    <div class="div_art">div pour image 3<p>texte3</p></div>
+                    <div class="div_art">div pour image 4<p>texte4</p></div>
+                    <div class="div_art">div pour image 5<p>texte5</p></div>
+                    <div class="div_art">div pour image 6<p>texte6</p></div>
+                </article>
+                
+                <aside id="most_popular">
+                    <div>div pour image 1</div>
+                    <div>div pour image 2</div>
+                    <div>div pour image 3</div>
+                </aside>
+            
+            </section>
+            
+            
+            <section id="sec_activities" class="flex_box" >
+                <h2>activités</h2>
+                <div class="flex_box">
+                    une image
+                </div>
+                
+                <div class="flex_box">deux images
+                </div>
+                
+                <div class="flex_box">une image
+                </div>
+                
+                <div class="flex_box">deux images
+                </div>    
+            
+            </section>
+            
+            <section id="sec_bottom">
+                
+                <footer>
+                    
+                    <div>colonne1
+                    </div>
+                
+                    <div>colonne2
+                    </div>
+                
+                    <div>colonne3
+                    </div>  
+                
+                </footer>
+                
+            </section>
+        </main>
+        
+    </body>
+    
+</html>
