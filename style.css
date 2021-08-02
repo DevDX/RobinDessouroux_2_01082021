@@ -267,21 +267,21 @@ margin-bottom: 50px;
     /*justify-content:space-between;*/
     font-size:1rem;
     font-family: 'Raleway',sans-serif;
-    background-color: lightgreen;
-    border:solid darkgreen;
-    align-content:space-around;
+    /*background-color: lightgreen;*/
+    /*border:solid darkgreen;*/
+    align-content:space-evenly;
     border-radius: 25px;
     
 }
 
 #art_acc
 {
-    background-color: yellow;
+    /*background-color: yellow;*/
     border:solid black;  
-    height: 550px;
+    height: 650px;
     width: 1025px;   
-    margin-bottom: 25px;
-    padding-bottom:25px;
+    margin-bottom: 55px;
+    padding-bottom:55px;
     padding-top:25px;
 }
 
@@ -298,29 +298,38 @@ margin-bottom: 50px;
     
 }  
 
-#top_1
+.top_1
 {
-    width:95%;
+    width:100%;
     height:60%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
+    /*background-color: white;*/
 }
+
+.bottom_1
+{
+    width:100%;
+    height:60%;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    /*background-color: white;*/
+}
+
 
 #div_top1
 {
-    background-color:rgb(245, 26, 26);
-    border:solid green;  
-    padding-bottom:25px;
-    padding-top:25px;
+    /*background-color:rgb(245, 26, 26);*/
+    border:solid rgba(35, 17, 85, 0.075);  
+    padding-top:0px;
 }
 
-/*#div_top2
+#div_top2
 {
-    background-color:rgb(245, 26, 26);
-    border:solid rgba(139, 130, 0, 0.075);  
-    padding-bottom:25px;
-    padding-top:25px;
-}*/
+    /*background-color:rgb(236, 95, 154);*/
+    border:solid rgba(35, 17, 85, 0.075);  
+    padding-top:0px;
+}
 
 .bckcol_grey
 {
