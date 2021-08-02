@@ -79,7 +79,8 @@ li
 
 nav a:hover
 {
-    color: purple;
+    color:white;
+    background-color: blueviolet;
 }
 
 
@@ -166,14 +167,6 @@ span
     height:50px;
 }
 
-#div_info
-{
-    display:flex;
-    justify-content:space-between;
-    /*color: red;
-    background-color: yellow;*/
-    width:550px;
-}
 
 .circle_border
 {
@@ -183,7 +176,8 @@ font-size:1rem;
 border-color: mediumblue;
 padding-left:0;
 color:blue;
-height:25px;width:25px;
+height:25px;
+width:25px;
 text-align: center;
 }
 
@@ -212,6 +206,22 @@ text-align: center;
     height: 30px;
 }
 
+#div_info
+{
+    display:flex;
+    justify-content:space-between;
+    /*color: red;
+    background-color: yellow;*/
+    width:550px;
+}
+
+.bckcol_blue
+{
+    color:blue;
+    font-size:1rem;
+}
+
+
 /*main
 {
     background-color: rgb(252, 183, 221);
@@ -228,6 +238,14 @@ padding:25px 0px 50px 0px;
 margin-bottom: 50px;
 }
 
+#div_h2
+{
+    /*background-color: rgb(122, 113, 204);
+    border: solid rgb(194, 178, 38);*/    
+    width:285px;
+    margin-left:100px;
+}
+
 #most_popular
 {
     background-color: beige;
@@ -242,34 +260,72 @@ margin-bottom: 50px;
     display: flex; 
     flex-wrap:wrap;
     flex-direction: column;
-    margin:0px 0px 50px 40px;
+    /*margin:0px 65px 60px 40px;*/
     padding-left:20px;
     padding-top:25px;
-    padding-bottom:25px;
-    justify-content:space-between;
+    /*padding-bottom:25px;*/
+    /*justify-content:space-between;*/
     font-size:1rem;
     font-family: 'Raleway',sans-serif;
     background-color: lightgreen;
     border:solid darkgreen;
-    align-content:space-evenly;
-    border-radius: 25px;    
-}
-
-.div_art
-{
-    background-color: skyblue;
-    border:solid darkblue;
+    align-content:space-around;
     border-radius: 25px;
-    height:20px; 
-    width:150px;
-}  
+    
+}
 
 #art_acc
 {
     background-color: yellow;
     border:solid black;  
-    height: 675px;
+    height: 550px;
     width: 1025px;   
+    margin-bottom: 25px;
+    padding-bottom:25px;
+    padding-top:25px;
+}
+
+.div_art
+{
+    /*background-color: skyblue;*/
+    border:solid black;
+    border-radius: 25px;
+    width:250px;
+    padding-bottom:25px;
+    padding-top:25px;
+    height:33%;
+    
+    
+}  
+
+#top_1
+{
+    width:95%;
+    height:60%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+#div_top1
+{
+    background-color:rgb(245, 26, 26);
+    border:solid green;  
+    padding-bottom:25px;
+    padding-top:25px;
+}
+
+/*#div_top2
+{
+    background-color:rgb(245, 26, 26);
+    border:solid rgba(139, 130, 0, 0.075);  
+    padding-bottom:25px;
+    padding-top:25px;
+}*/
+
+.bckcol_grey
+{
+    color:grey;
+    font-size:1rem;
 }
 
 
