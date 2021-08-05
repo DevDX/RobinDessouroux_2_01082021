@@ -562,7 +562,9 @@ justify-content: space-between;*/
     border: solid rgb(194, 178, 38);*/   
     /*width:75%;*/
     height:10px;
-    margin-left:15px;margin-top:0px;padding-top:90px;
+    margin-left:15px;
+    margin-top:0px;
+    padding-top:90px;
     text-align:left;
 }
 
@@ -700,9 +702,29 @@ justify-content: space-between;*/
 footer
 {
     display:flex;
-    background-color: #0065FC;
+    background-color: #00cafc;
     /*border:solid black;*/    
-    height:200px;
+    height:216px;
     margin: 80px auto 0px auto;
     max-width: 1440px;
+    justify-content: flex-start;  
+    flex-wrap:nowrap;
+}
+
+.foot_div
+{
+    background-color:lightyellow;
+    border: solid lightgreen;
+    margin:40px auto  auto 50px;
+    height:70%;
+    width:20%;
+}
+
+#sec_bottom .foot_div h3
+{
+    font-size:20px;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 600 ;  
+    margin-bottom:25px; 
+
 }
