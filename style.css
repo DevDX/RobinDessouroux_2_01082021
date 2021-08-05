@@ -217,7 +217,9 @@ h1
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     height:65px;
-    /*font-size:0.75rem;*/font-size:18px;font-weight: bold;
+    /*font-size:0.75rem;*/
+    font-size:18px;
+    font-weight: bold;
     font-family: 'Raleway',sans-serif;
     width:135px;
 }
@@ -248,25 +250,26 @@ span
 {
 border-radius: 50px;
 background-color: #DEEBFF;
-/*font-size:1rem;*/font-size: 23px;
-border-color: #0065FC;
+/*font-size:1rem;*/
+font-size: 23px;
+/*border-color: #0065FC;*/
+border-color:#F2F2F2;
 padding-left:0;
 color:#0065FC;
 height:42px;
 width:42px;
 text-align:center;
 padding-top: 10px;
-
-
-
 }
 
-.hover_red:hover
+.hover_blu:hover
 {
-    color: red;
+    /*color: red;*/
+    color:#0065FC;
     /*font-size: 1rem;*/
     font-weight:bold;
     cursor:pointer;
+    border-color: #0065FC;
 }
 
 .flex_box_special
@@ -280,9 +283,10 @@ padding-top: 10px;
     font-size: 23px;
     font-family: 'Raleway',sans-serif;
     background-color: white;
-    border-top-color:  black;
+    /*border-top-color:  black;*/
     /*border-bottom-color: black;*/
-    border:solid #DEEBFF;
+    /*border:solid #DEEBFF;*/
+    border: solid #F2F2F2;
     border-radius: 25px;
     height: 48px;
     /*background-color: orange;*/
@@ -312,7 +316,7 @@ padding-top: 10px;
     font-size:1rem;
 }
 
-.circle_border_wht
+.circle_wht_border
 {
 border-radius: 50px;
 background-color: white;
@@ -345,23 +349,22 @@ main
 
 #sec_whole_marseille
 {
-    background-color:cyan;
+    /*background-color:cyan;*/
     padding-top:0px;
-    border-radius:25px;
-    
+    border-radius:25px;    
 }
+
 #sec_accommodation
 {
-    background-color: gold;
+    /*background-color: gold;*/
     display: flex;
     /*justify-content: space-between;*/
     max-height:624px;
-    
 }
 
 #art_marseille
 {
-background-color: lightgray;
+/*background-color: lightgray;*/
 /*border:solid darkgray;  */ 
 border-radius: 25px;    
 padding:0px 0px 0px 0px; 
@@ -401,7 +404,8 @@ justify-content: space-between;*/
 
 #art_acc
 {
-    background-color: yellow;
+    /*background-color: yellow;*/
+    background-color: #F2F2F2;
     /*border:solid black;  */
     /*height: 619px;*/
     max-width:882px;
@@ -438,10 +442,13 @@ justify-content: space-between;*/
 
 .div_art:hover
 {
-    color:  white;
+    /*color:  white;*/
+    color:#0065FC;    
     border:solid;
     border-color: #0065FC; 
-    background-color:#0065FC;
+    /*background-color:#0065FC;*/
+    /*border-color: #DEEBFF; 
+    background-color:#DEEBFF;*/
 }
 
 .div_top
@@ -479,7 +486,7 @@ justify-content: space-between;*/
 .asi_div_art
 {
     background-color: white;
-    border:solid red;
+    /*border:solid red;*/
     border-radius: 25px;
     /*width:165px;*/
     width:75%;
@@ -488,8 +495,8 @@ justify-content: space-between;*/
     margin-left: auto;
     margin-right: auto;
     /*height:100%;*/   
-    /*border:solid;
-    border-color: white;*/ 
+    border:solid;
+    border-color: white; 
     display: flex;
     flex-direction: row;
     margin-top:25px;
@@ -498,9 +505,12 @@ justify-content: space-between;*/
 
 .asi_div_art:hover
 {
-    color:white;  
-    border:solid white; 
-    background-color:#0065FC;
+    /*color:white;*/
+    color:  #0065FC;
+    /*font-weight:bold;*/
+    border:solid #0065FC; 
+    /*background-color:#0065FC;*/
+    /*background-color:#DEEBFF;*/
 }
 
 #asi_div_h2
@@ -521,7 +531,8 @@ justify-content: space-between;*/
 
 #most_popular
 {
-    background-color: beige;
+    /*background-color: beige;*/
+    background-color: #F2F2F2;
     /*border: solid grey;*/
     /*max-height: 624px;*/
     max-width:419px;
@@ -529,7 +540,8 @@ justify-content: space-between;*/
     margin-right:0px;
     margin-left:50px;
     padding-left:20px;
-    padding-top:25px;padding-bottom:50px;
+    padding-top:25px;
+    padding-bottom:50px;
     display:flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -580,7 +592,9 @@ justify-content: space-between;*/
     font-size:20px;
     font-family: 'Raleway',sans-serif;
     font-weight: 600 ;
-    color:#0065FC;font-weight: bold;
+    color:#0065FC;
+    /*color:#DEEBFF;*/
+    font-weight: bold;
 }
 
 /*#div_top1
@@ -602,20 +616,20 @@ justify-content: space-between;*/
 
 #art_act
 {
-    background-color: lightgray;
-    border:solid darkgray;   
+    /*background-color: lightgray;
+    border:solid darkgray;*/   
     border-radius: 25px;    
     padding:25px 0px 50px 0px; 
     margin-bottom: 50px;
     /*max-height:495px;
     height:100%;*/
-    height:550px;
+    height:530px;
 }
 
 #sec_activities
 {
-    background-color: orangered;
-    border:solid black;   
+    /*background-color: orangered;
+    border:solid black; */  
     border-radius: 25px;
     margin:5px 0px 0px 0px;
     height:100%;
@@ -630,7 +644,7 @@ justify-content: space-between;*/
     border:solid;
     border-color: white;
     border-radius: 25px;
-    width:21%;
+    width:22.75%;
     height:100%;
     /*padding-bottom:25px;
     padding-top:25px;*/
@@ -638,6 +652,7 @@ justify-content: space-between;*/
     /*margin-bottom:auto;*/
     /*margin-left:auto;
     margin-right:auto;*/
+    box-shadow: 8px 8px 18px #F2F2F2;
   
 
      /*test
@@ -650,27 +665,30 @@ justify-content: space-between;*/
 
 .div_art_act:hover
 {
-    color:  white;
+    color:  #0065FC;
     border:solid;
     border-color: #0065FC; 
-    background-color:#0065FC;
+    /*border-color:#DEEBFF;*/
+    background-color:white;
+    /*background-color:#DEEBFF;*/
 }
 
 .flex_box_col
 {
-    background-color: rgb(68, 189, 52);
+    /*background-color: rgb(68, 189, 52);*/
     display: flex;
     flex-direction: column;
     /*flex-wrap: nowrap;*/align-items:center;
     /*justify-content: space-between;*/   
-    width:22%;
+    width:22.75%;
+   
 }
 
 .div_art_act_col
 {
     background-color: white;
-    border:solid;
-    border-color: white;
+    /*border:solid;*/
+    /*border-color: white;*/
     border-radius: 25px;
     width:100%;
     height:50%;
@@ -680,7 +698,7 @@ justify-content: space-between;*/
     /*margin-bottom:auto;*/
     /*margin-left:auto;
     margin-right:auto;*/
-  
+    box-shadow: 8px 8px 18px #F2F2F2;
 
      /*test
      box-sizing: border-box;
@@ -692,17 +710,75 @@ justify-content: space-between;*/
 
 .div_art_act_col:hover
 {
-    color:  white;
+    color:  #0065FC;
     border:solid;
     border-color: #0065FC; 
-    background-color:#0065FC;
+    background-color:white;
+    /*border-color: #DEEBFF; 
+    background-color:#DEEBFF;*/
+}
+
+.big_pic
+{
+    height:88.2%;
+}
+
+.small_txt
+{
+    padding-top:24px;
+    padding-left:15px;
+    height:10%;
+}
+
+#div_pomeg
+{
+    height:53%;
+}
+
+.pic_pomeg
+{
+    height:76.5%;
+}
+
+#div_frioul
+{
+    margin-top:44px;
+    height:37%;
+}
+
+.pic_frioul
+{
+    height:66%;
+}
+
+#div_nd_garde
+{
+    height:44%;
+}
+
+.nd_garde
+{
+    height:71.75%;
+}
+
+#div_p_longchamp
+{
+    margin-top:40px;
+    height:47%;
+    /*border:solid red;*/
+}
+
+.p_longchamp
+{
+    height:74.25%;
 }
 
 /* FOOTER */
 footer
 {
     display:flex;
-    background-color: #00cafc;
+    /*background-color: #00cafc;*/
+    background-color: #F2F2F2;
     /*border:solid black;*/    
     height:216px;
     margin: 80px auto 0px auto;
@@ -713,8 +789,8 @@ footer
 
 .foot_div
 {
-    background-color:lightyellow;
-    border: solid lightgreen;
+    /*background-color:lightyellow;
+    border: solid lightgreen;*/
     margin:40px auto  auto 50px;
     height:70%;
     width:20%;
