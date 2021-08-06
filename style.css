@@ -821,14 +821,17 @@ align-items:baseline;
     height:74.25%;
 }
 
+
 /* FOOTER ------------------------------------------------------*/
+/* contient l'ancienne et la nouvelle version  */
+
 footer
 {
     display:flex;
     /*background-color: #00cafc;*/
     background-color: #F2F2F2;
     /*border:solid black;*/    
-    height:216px;
+    height:259px;
     margin: 80px auto 0px auto;
     max-width: 1440px;
     justify-content: flex-start;  
@@ -837,11 +840,33 @@ footer
 
 .foot_div
 {
-    /*background-color:lightyellow;
+    /*background-color:yellow;
     border: solid lightgreen;*/
     margin:40px auto  auto 50px;
-    height:70%;
+    height:80%;
     width:20%;
+}
+
+.foot_div ul
+{
+    display:flex;
+    flex-direction: column;    
+    padding-top:0px;
+    /*border: solid blue;*/
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    height: 50%; 
+}
+
+.foot_div ul li 
+{
+    /*border:solid red;*/
+    width:100%;
+    text-align: start;
+    font-size:14px;
+    font-family: 'Raleway',sans-serif;
+    padding-top:0px;   
+    height:30px;
 }
 
 #sec_bottom .foot_div h3
@@ -860,4 +885,20 @@ footer
     font-size:18px;
     font-family: 'Raleway',sans-serif;
     font-weight: 600 ;  
+}
+
+.foot_div nav ul li:hover
+{
+    border-top: hidden;
+}
+
+.foot_div nav ul li a:hover
+{
+    color:#0065FC;
+    font-weight:bold;
+    /*cursor:pointer;*/
+    font-size:18px;
+    font-family: 'Raleway',sans-serif;
+    font-weight: 600 ;  
+    border-top: hidden;
 }
