@@ -1,5 +1,5 @@
 
-@media screen and (max-width: 1023px) /* règles CSS pour Responsive */
+@media screen and (max-width: 1023px) /* règles CSS pour les mobiles ici */
 {
  
 /* ------- RESET ------- */
@@ -500,10 +500,14 @@ main
 
 #sec_accommodation
 {
-    /*background-color: gold;*/
+    background-color: gold;
     display: flex;
     /*justify-content: space-between;*/
-    max-height:624px;
+    /*new RDX 210810 deb ====*/
+    /*max-height:624px;*/
+    max-width: 375px;
+    flex-direction: column;
+    /* new RDX 210810  fin ====*/
 
 }
 
@@ -514,7 +518,10 @@ main
 border-radius: 25px;    
 padding:0px 0px 0px 0px; 
 margin-bottom: 20px;
-max-width:1340px;
+/*new RDX 210810 deb ====*/
+/*max-width:1340px;*/
+width:375px;
+/* new RDX 210810  fin ====*/
 /*display:flex;
 flex-direction: row;
 justify-content: space-between;*/
@@ -545,6 +552,7 @@ justify-content: space-between;*/
     font-family: 'Raleway',sans-serif;
     /*background-color: lightgreen;*/
     border-radius: 25px;
+    flex-direction: column;/* new RDX 210810  ====*/
 }
 
 #art_acc
@@ -553,13 +561,18 @@ justify-content: space-between;*/
     background-color: #F2F2F2;
     /*border:solid black;  */
     /*height: 619px;*/
-    max-width:882px;
-    width: 65%; 
+    /*max-width:882px;/* new RDX 210810  ====*/
+    max-width:375px;/* new RDX 210810  ====*/
+    /*width: 65%; *//* new RDX 210810  ====*/
+    width:100%;/* new RDX 210810  ====*/
+
+    /* new RDX 210810  ====*/
     /*margin-bottom: 30px;
     margin-left:0px;*/
     /*padding-bottom:155px;*/
     padding:40px 35px 70px 30px;
-    margin-bottom:0px;
+    margin-bottom:0px;    
+    order:2;/* new RDX 210810  ====*/
 }
 
 .div_art
@@ -680,10 +693,11 @@ spanb
     background-color: #F2F2F2;
     /*border: solid grey;*/
     /*max-width:419px;*/
-    width:419px;
+    /*width:419px;*//* new RDX 210810  ====*/
     border-radius: 25px;
     margin-right:0px;
-    margin-left:50px;
+    /*margin-left:50px;*//* new RDX 210810  ====*/
+    margin-left:0px;/* new RDX 210810  ====*/
     /*padding-left:20px;*/
     padding-top:25px;
     padding-bottom:50px;
@@ -692,7 +706,11 @@ spanb
     display:flex;
     flex-direction: column;
     /*flex-wrap: nowrap;*/
-    height:624px;    
+    height:624px;  
+    /* new RDX 210810  deb ====*/
+    order:1;
+    width:375px;
+    /* new RDX 210810  deb ====*/
 }
 
 #asi_div_header
