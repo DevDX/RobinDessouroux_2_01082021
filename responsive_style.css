@@ -1,3 +1,7 @@
+
+@media screen and (max-width: 1023px) /* règles CSS pour Responsive */
+{
+ 
 /* ------- RESET ------- */
 
 /*html,body
@@ -26,7 +30,7 @@ a{color: black;text-decoration: none;}
 /*ul{list-style-type: none;}*/
 
 
-/* -------- Fin RESET ---*/
+/* -------- Fin RESET ---*/    
 
 
 /* HEADER -------------------------------------*/
@@ -34,48 +38,63 @@ a{color: black;text-decoration: none;}
 header
 {
     margin-top:0px; 
-    margin-bottom:35px;
+    margin-bottom:30px;
     padding-top:0px;
     flex-direction:row;
     /*background-color: aqua;
     border:solid grey;*/ 
-    max-width: 1340px;     
-    margin-left:auto;
+    max-width: 375px;     
+    margin-left:0;
     margin-right:auto;
-    height:100px;
+    height:138px;
+    z-index:10;
+    
 }
 
 .flex_box
 {
     display:flex;
     justify-content:space-between;
+    /*border: 5px solid black;*/
 }
 
 .div_logo
 {
     /*border:solid lightgreen;*/
-    flex-basis:45%;
+    /*background-color:yellow;**/
+    /*flex-basis:45%;*/
     /*max-width:100px;*/
-    height:100%;
-    padding-top: 45px;
-    /*font-size:29px ;*/
+    width:100px;
+    height:98px;
+    padding-top: 30px;
+    /*font-size:29px ;*
+    /z-index:19;*/
+    position:absolute;
 }
 
 #logo_small_size
 {
-    width:20%; 
+    width:100%; 
     /*border:solid green;*/
     margin:0;
     font-size: 15px;
+    height:100%;
+    /*background-color:pink;*/
+    z-index:19;
 }
 
 .div_links
 {
     /*border:solid #0065FC;*/
-    flex-basis:37%;
-    height:95%;
-    padding-top: 0px;
-         
+    /*flex-basis:37%;*/
+    width:375px;
+    height:100%;
+    padding-top: 20px;
+    display:flex;
+    flex-wrap:wrap;
+    /*border: solid 5px red;*/
+    opacity: 1;
+    margin-left:2px;
 }
 
 nav
@@ -83,15 +102,26 @@ nav
     /*border:solid red;*/
     flex-basis:100%;
     height:100%;
+    flex-wrap:wrap; 
+    display:flex;
+    opacity: 1;
 }
 
 ul
 {
     /*border:solid yellow;*/ 
-    flex-basis:100%;
-    height:100%;
+    /*width:187px;*/
+    width:375px;
+    height:30%;
     list-style: none;  
-    margin:0px 0px auto auto;       
+    margin:0px 0px auto auto;    
+    display:flex;  
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content:flex-end;
+    opacity: 1;
+   
+    
 }
 
 li
@@ -99,15 +129,17 @@ li
     /*border:solid pink;*/
     font-size: 19px;
     /*font-weight:bold;*/
-    width:33%;   
+    width:45%;   
     height:100%;
     text-align:center;
-    padding-top: 50px;    
+    padding-top: 0px;   
+    opacity: 1;
 }
 
 #li_ini
 {
-   border-top: 0.5px solid #0065FC;    
+   /*border-top: 0.5px solid #0065FC;    */
+    border-top:hidden;
 }
 
 #a_ini
@@ -115,29 +147,77 @@ li
     color:#0065FC;
 }
 
-nav li:hover
-{
+/*nav li:hover
+{*/
     /*color:white;
     background-color: #0065FCviolet;*/
     /*font-size: 1.25rem;*/
-    border-top: 0.5px solid #0065FC;
+    /*border-top: 0.5px solid #0065FC;*/
+    /*border-bottom: 0.5px solid #0065FC;
     color:#0065FC;
-}
+}*/
 
-nav li a:hover
-{
+/*nav li a:hover
+{*/
     /*color:white;
     background-color: #0065FCviolet;*/
     /*font-size: 1.25rem;*/
-    color:#0065FC;
+    /*color:#0065FC;
     font-weight:bold;
-}
+}*/
 
 spanc
 {
     color:#0065FC;
     font-weight:bold;
 }
+
+    #li_ini
+    {
+        order:2;
+        /*background-color:orange;*/
+        z-index:2;
+        opacity: 1;
+    }
+    
+    #li_act
+    {
+        order:3;
+       /*background-color:aquamarine;*/
+        z-index:2;opacity: 1;
+    }
+    
+    #li_ins
+    {
+        order:1;
+        /*background-color:deeppink;*/
+        margin-left:240px;
+        margin-top:40px;
+        /*border:solid 2px purple;*/
+        z-index:5;
+        opacity: 1;
+    }
+    
+      #li_ins:hover
+    {
+        border-top:hidden;
+        border-bottom: 0.25px solid #0065FC;
+        color:#0065FC;
+    }
+    
+      #li_act:hover
+    {
+        border-top:hidden;
+        border-bottom: 0.25px solid #0065FC;
+        color:#0065FC;
+    }
+
+      #li_ini:hover
+    {
+        border-top:hidden;
+        border-bottom: 0.25px solid #0065FC;
+        color:#0065FC;
+    }
 
 
  /* SECTION SEARCH ------------------------------*/
@@ -146,7 +226,8 @@ h2
 {
     font-size:1rem;
     font-family: 'Raleway',sans-serif;   
-    margin-right:5px;
+    margin-right:5px;   
+    
 }
 
 #sec_search
@@ -240,14 +321,26 @@ span
 #div_filter
 {
     /*background-color: rgb(43, 255, 0);
-    border:solid purple;*/ 
+    border:solid purple; */
     margin-top:50px;
-    margin-bottom:20px;
-    height:75px;
-    justify-content: flex-start;
-    align-items: center;
+    margin-bottom:50px;
+    margin-left:0px;
+    padding-left:0px;
+    height:275px;width:425px;
+    justify-content:flex-start;
+    align-items:flex-start;
+    align-content:flex-start;
+    flex-direction:column;
+    flex-wrap:wrap;
 }
-
+    
+    #div_filter h2
+    {
+        /*border: solid yellow;*/
+        width:100%;
+        margin-bottom:40px;
+    }
+    
 #div_filter p
 {
     padding-left:20px;;
@@ -255,6 +348,44 @@ span
     font-weight:bold;
 }
 
+    #div_child
+    {
+        order:4;
+        margin-top:60px;
+        
+    }
+    #div_child p
+    {
+         font-size:12px;   
+    }
+    #div_money
+    {
+        order:1;
+    }
+    #div_money p
+    {
+        font-size:12px;
+    }
+    #div_heart
+    {
+        order:2;
+    }
+    #div_heart p
+    {
+         font-size:12px;   
+    }
+    #div_dog
+    {
+        order:3;
+        /*border:solid purple;*/
+        /*width:100%;*/
+    }
+    
+    #div_dog p
+    {
+        font-size:12px;   
+    }
+    
 .circle_border
 {
     border-radius: 50px;
@@ -265,8 +396,8 @@ span
     border-color:#F2F2F2;
     padding-left:0;
     color:#0065FC;
-    height:42px;
-    width:42px;
+    height:48px;
+    width:48px;
     text-align:center;
     padding-top: 10px;
 }
@@ -284,12 +415,12 @@ span
 .flex_box_special
 {
     display: flex; 
-    margin:0px 0px 5px 24px;
+    margin:0px 0px 15px 0px;
     padding-left:0px; 
     justify-content:center;
-    flex-direction: row;
+    flex-direction: row;    
     /*font-size:1rem;*/
-    font-size: 23px;
+    font-size: 12px;
     font-family: 'Raleway',sans-serif;
     background-color: white;
     /*border-top-color:  black;*/
@@ -297,18 +428,21 @@ span
     /*border:solid #DEEBFF;*/
     border: solid #F2F2F2;
     border-radius: 25px;
-    height: 48px;
+    height: 51px;
     /*background-color: orange;*/
     align-items: center;
+    max-width:220px;
+    text-align: center;
+    
 }
 
 #div_info
 {
     display:flex;
     justify-content:flex-start;
-    /*color: red;
-    background-color: yellow;*/
-    width:550px;
+    /*color: red;*/
+    /*background-color: yellow;*/
+    width:342px;
     align-content:center;    
 }
 
@@ -316,6 +450,7 @@ span
 {
     margin-left:15px;
     margin-top:2px;
+    font-size:15px;
 }
 
 .bckcol_blue
@@ -907,4 +1042,6 @@ footer
     font-family: 'Raleway',sans-serif;
     font-weight: 600 ;  
     border-top: hidden;
+}
+    
 }
