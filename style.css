@@ -238,6 +238,11 @@ h1
     width:135px;
 }
 
+#btn_search
+{
+    display:none;
+}
+
 span
 {
     text-transform: uppercase; 
