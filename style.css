@@ -54,24 +54,16 @@ header
 .div_logo
 {
     /*border:solid lightgreen;*/
-    /*max-width:100px;*/
-    /* new RDX 210810 deb ===== */
-    /* height:100%;*/
-    /* flex-basis:45%;*/
     width:100px;
     height:98px;    
-    /*new RDX 210810 fin =======*/
     padding-top: 45px;    
-    /*font-size:29px ;*/
+    position:relative;
 }
 
-#logo_small_size
+#logo_reservia
 {
-    /* new RDX 210810 deb ===== */
-    /*width:20%;*/ 
     width:100%; 
     height:100%;
-    /*new RDX 210810 fin =======*/
     /*border:solid green;*/
     margin:0;
     font-size: 15px;
@@ -89,7 +81,7 @@ nav
 {
     /*border:solid red;*/
     flex-basis:100%;
-    height:100%;
+    height:100%; 
 }
 
 ul
@@ -98,7 +90,8 @@ ul
     flex-basis:100%;
     height:100%;
     list-style: none;  
-    margin:0px 0px auto auto;       
+    margin:0px 0px auto auto;    
+    display:flex;
 }
 
 li
@@ -110,11 +103,14 @@ li
     height:100%;
     text-align:center;
     padding-top: 50px;    
+    border-top:3px solid transparent;   
+    flex:1;
+    
 }
 
 #li_ini
 {
-   border-top: 0.5px solid #0065FC;    
+   border-top:3px solid #0065FC;    
 }
 
 #a_ini
@@ -124,10 +120,7 @@ li
 
 nav li:hover
 {
-    /*color:white;
-    background-color: #0065FCviolet;*/
-    /*font-size: 1.25rem;*/
-    border-top: 0.5px solid #0065FC;
+    border-top: 3px solid #0065FC;
     color:#0065FC;
 }
 
@@ -135,12 +128,11 @@ nav li a:hover
 {
     /*color:white;
     background-color: #0065FCviolet;*/
-    /*font-size: 1.25rem;*/
     color:#0065FC;
     font-weight:bold;
 }
 
-spanc
+.class_bold_and_blue
 {
     color:#0065FC;
     font-weight:bold;
@@ -152,27 +144,23 @@ spanc
 h2
 {
     font-size:1rem;
-    font-family: 'Raleway',sans-serif;   
     margin-right:5px;
 }
 
-#sec_search
+#search
 {
-    margin:2px 0 50px 0px; 
+    margin:2px 0 40px 0px; 
     /*border:solid orange;
     background-color: coral;*/ 
 }
-#sec_search p
+#search p
 {
     font-size:19px;
-    font-family: 'Raleway',sans-serif;    
 }
 
 h1
 {
-    /*font-size:1.25rem;*/
     font-size:26px;
-    font-family: 'Raleway',sans-serif;
     font-weight: 700 ;
     margin-bottom: 9px;;
 }
@@ -181,11 +169,10 @@ h1
 {
     display: flex; 
     flex-direction: column;
-    height:65px;
+    height:50px;
     width:20%;
     margin:50px 0 50px 0px;
     font-size:1.5rem;
-    font-family: 'Raleway',sans-serif;
     padding: 0px;
     flex-wrap: wrap;
     align-content: left;
@@ -195,6 +182,7 @@ h1
 #div_search input
 {
     font-weight:bold;
+    height:100%;
 }
 
 #posi_town
@@ -207,17 +195,22 @@ h1
     text-align:center;
     height:65px;
     align-content: center;
-    padding-top: 20px;   
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;    
 }
 
 #town
 {
+    border:none;
     text-align:start;
     border-right:hidden;
     border-left:hidden;
-    height:65px;
+    height:100%;
     font-size:20px;
-    font-family: 'Raleway',sans-serif;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
     border-top-color: #F2F2F2;
     border-bottom-color: #F2F2F2;
     width:235px;
@@ -226,15 +219,14 @@ h1
 
 #btn
 {
+    border:none;
     background-color: #0065FC;
     color:white;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    height:65px;
-    /*font-size:0.75rem;*/
+    height:100%;
     font-size:18px;
     font-weight: bold;
-    font-family: 'Raleway',sans-serif;
     width:135px;
 }
 
@@ -243,10 +235,9 @@ h1
     display:none;
 }
 
-span
+.class_uppercase
 {
     text-transform: uppercase; 
-    font-family: 'Raleway',sans-serif;
 }
 
 #div_filter
@@ -271,7 +262,6 @@ span
 {
     border-radius: 50px;
     background-color: #DEEBFF;
-    /*font-size:1rem;*/
     font-size: 23px;
     /*border-color: #0065FC;*/
     border-color:#F2F2F2;
@@ -287,7 +277,6 @@ span
 {
     /*color: red;*/
     color:#0065FC;
-    /*font-size: 1rem;*/
     font-weight:bold;
     cursor:pointer;
     border-color: #0065FC;
@@ -300,9 +289,7 @@ span
     padding-left:0px; 
     justify-content:center;
     flex-direction: row;
-    /*font-size:1rem;*/
     font-size: 23px;
-    font-family: 'Raleway',sans-serif;
     background-color: white;
     /*border-top-color:  black;*/
     /*border-bottom-color: black;*/
@@ -333,7 +320,6 @@ span
 .bckcol_blue
 {
     color:#0065FC;
-    /*font-size:1rem;*/
     font-size:14px;
 }
 
@@ -341,7 +327,7 @@ span
 {
 border-radius: 50px;
 background-color: white;
-/*font-size:1rem;*/font-size: 11px;
+font-size: 11px;
 border:solid #DEEBFF;
 padding-left:0;
 color:#0065FC;
@@ -368,33 +354,23 @@ main
 
 /* SECTION marseille ----------------------------------------------*/
 
-#sec_whole_marseille
+#section_whole_marseille
 {
     /*background-color:cyan;*/
     padding-top:0px;
-    border-radius:25px;    
-}
-
-#sec_accommodation
-{
-    /*background-color: gold;*/
-    display: flex;
-    /*justify-content: space-between;*/
+    border-radius:25px;   
+    border-radius: 25px;    
+    padding:0px 0px 0px 0px; 
+    margin-bottom: 0px;
+    max-width:1340px;
+    /*display:flex;
+    flex-direction: row;
+    justify-content: space-between;*/
+     display: flex;
     max-height:624px;
-
-}
-
-#art_marseille
-{
-/*background-color: lightgray;*/
-/*border:solid darkgray;  */ 
-border-radius: 25px;    
-padding:0px 0px 0px 0px; 
-margin-bottom: 20px;
-max-width:1340px;
-/*display:flex;
-flex-direction: row;
-justify-content: space-between;*/
+    direction:column;
+    flex-wrap: nowrap;
+    justify-content:flex-start;
 }
 
 #div_h2
@@ -409,68 +385,78 @@ justify-content: space-between;*/
 #div_h2 h2
 {
     font-size:22px;
-    font-family: 'Raleway',sans-serif;
     font-weight: 600 ;
 }
 
-.flex_box_art
+#article_accommodation h2
 {
-    display: flex; 
-    flex-wrap:wrap;
-    justify-content: space-between;
-    font-size:1rem;
-    font-family: 'Raleway',sans-serif;
-    /*background-color: lightgreen;*/
-    border-radius: 25px;
+    width:75%;
+    height:35px;
+    margin-left:15px;
+    font-size:22px;
+    font-weight: 600 ;
+}
+    
 }
 
-#art_acc
+.flex_box_article
+{
+    display: flex; 
+    flex-direction:column;
+    flex-wrap:nowrap;
+    justify-content: flex-start;
+    font-size:1rem;
+    /*background-color: lightgreen;*/
+    border-radius: 25px;
+    align-content:flex-start;
+    align-items:flex-start;    
+}
+
+#article_accommodation
 {
     /*background-color: yellow;*/
     background-color: #F2F2F2;
-    /*border:solid black;  */
+    /*border:solid purple;*/
     /*height: 619px;*/
-    max-width:882px;
-    width: 65%; 
+    max-width:884px;
+    width: 100%; 
     /*margin-bottom: 30px;
     margin-left:0px;*/
     /*padding-bottom:155px;*/
     padding:40px 35px 70px 30px;
     margin-bottom:0px;
+    border-radius: 25px;
+    display: flex; 
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:space around;
 }
 
-.div_art
+.class_accommodation_marseille
 {
     background-color: white;
     border:solid;
     border-color: white;
     border-radius: 25px;
     width:31%;
-    height:36%;
+    height:40%;
     /*padding-bottom:25px;
     padding-top:25px;*/
-    margin-top:0px;
+    margin-top:5px;
     /*margin-bottom:auto;*/
     margin-left:auto;
     margin-right:auto;
-    margin-bottom:30px;
+    margin-bottom:15px;
     font-size: 16px;
-    font-family: 'Raleway',sans-serif;
     /*background-color:orange;*/
-     /*test
-     box-sizing: border-box;
-     width: 24%;
-     border: solid #5B6DCD 10px;
-     padding: 5px;
-     test*/
 }  
 
-.div_art p
+.class_accommodation_marseille p
 {
     padding-left:15px;
 }
 
-.div_art:hover
+.class_accommodation_marseille:hover
 {
     /*color:  white;*/
     color:#0065FC;    
@@ -514,34 +500,28 @@ justify-content: space-between;*/
     cursor: pointer;
 }
 
-spanb
+.class_bold
 {
     font-weight:bold;
 }
 
-#div_h3
+#article_accommodation h3
 {
     /*background-color: rgb(122, 113, 204);
     border: solid rgb(194, 178, 38);*/   
-    /*width:75%;*/
     height:10px;
     margin-left:15px;
-    margin-top:0px;
-    padding-top:5px;
+    margin-top:5px;
+    padding-top:15px;
     text-align:left;
-}
-
-#div_h3 h3
-{
     font-size:20px;
-    font-family: 'Raleway',sans-serif;
     font-weight: 600 ;
 }
 
-#div_h3 h3:hover
+
+#article_accommodation h3:hover
 {
     font-size:20px;
-    font-family: 'Raleway',sans-serif;
     font-weight: 600 ;
     color:#0065FC;
     /*color:#DEEBFF;*/
@@ -556,42 +536,51 @@ spanb
     /*background-color: beige;*/
     background-color: #F2F2F2;
     /*border: solid grey;*/
-    /*max-width:419px;*/
-    width:419px;
+    width:420px;
     border-radius: 25px;
     margin-right:0px;
     margin-left:50px;
-    /*padding-left:20px;*/
-    padding-top:25px;
+    padding-top:34px;
     padding-bottom:50px;
-    padding-left:auto;
-    padding-right:auto;
+    /*padding-left:auto;
+    padding-right:auto;*/
     display:flex;
     flex-direction: column;
-    /*flex-wrap: nowrap;*/
     height:624px;    
 }
 
-#asi_div_header
+#most_popular_header
 {
-/*background-color: chartreuse;*/
-/*border:solid black;*/
-display:flex;
-justify-content:flex-start;
-align-items:baseline;
+    /*background-color: chartreuse;
+    border:solid black;*/
+    display:flex;
+    justify-content:flex-start;
+    align-items:baseline;
+    width:345px;
+    margin-left:30px;
+    margin-top:5px;  
 }
 
-#asi_div_header i
+#most_popular_header h2
 {
     font-size:22px;
+    font-weight: 600 ;
+    /*background-color:yellow;*/
+    flex:1;
 }
 
-.asi_div_art
+#most_popular_header i
+{
+    font-size:22px;
+    padding-right:0px;
+    /*background-color:pink;*/
+}
+
+.aside_div_flex
 {
     background-color: white;
     border-radius: 25px;
-    /*width:419px;*/
-    width:81.5%;
+    width:85%;
     padding-bottom:0px;
     padding-top:0px;
     margin-left: auto;
@@ -601,7 +590,7 @@ align-items:baseline;
     border-color: white; 
     display: flex;
     flex-direction: row;
-    margin-top:25px;
+    margin-top:18px;
     height:145px;
     justify-content: flex-start;
     /*border:solid red;*/
@@ -621,17 +610,16 @@ align-items:baseline;
     font-size:10px;
 }
 
-.asi_div_art:hover
+.aside_div_flex:hover
 {
     /*color:white;*/
     color:  #0065FC;
-    /*font-weight:bold;*/
     border:solid #0065FC; 
     /*background-color:#0065FC;*/
     /*background-color:#DEEBFF;*/
 }
 
-.asi_div_art p
+.aside_div_flex p
 {
     padding-left:15px;
     /*margin-left:5px;*/
@@ -639,23 +627,22 @@ align-items:baseline;
     font-size:14px;    
 }
 
-#asi_div_h2
+#aside_div_h2
 {
     /*background-color: rgb(122, 113, 204);
     border: solid rgb(194, 178, 38);*/    
     width:300px;
-    margin-left:40px;
+    margin-left:30px;
     margin-top:5px;
 }
 
-#asi_div_h2 h2
+#aside_div_h2 h2
 {
     font-size:22px;
-    font-family: 'Raleway',sans-serif;
     font-weight: 600 ;
 }
 
-.asi_class_img
+.aside_class_img
 {
     width:100%;
     height:100%;
@@ -665,7 +652,7 @@ align-items:baseline;
     /*background:pink;*/
 }
 
-.asi_txt
+.aside_txt
 {
     width:100%;
     height:100%;
@@ -673,8 +660,6 @@ align-items:baseline;
     border-top-right-radius: 25px;
     /*padding-left:2px;*/
     padding-top:15px;
-    /*border-bottom-right-radius: 25px;*/
-    /*background-color: white;*/
     cursor: pointer;
     /*background-color:lightgreen;*/
 }
@@ -682,22 +667,27 @@ align-items:baseline;
 
 /* ARTICLE activités art_act ------------------------------*/
 
-#art_act
+#article_activities
 {
     /*background-color: lightgray;
     border:solid darkgray;*/   
     border-radius: 25px;    
     padding:25px 0px 50px 0px; 
     margin-bottom: 50px;
-    /*max-height:495px;
-    height:100%;*/
+    margin-top:30px;
     height:530px;
 }
 
-#sec_activities
+#article_activities h2
+{
+   font-size:22px;
+   font-weight: 600 ; 
+}
+
+#section_activities
 {
     /*background-color: orangered;
-    border:solid black; */  
+    border:solid black;*/   
     border-radius: 25px;
     margin:5px 0px 0px 0px;
     height:100%;
@@ -707,11 +697,9 @@ align-items:baseline;
     font-weight:bold;
 }
 
-.div_art_act
+.div_activities
 {
     background-color: white;
-    /*border: solid;*/
-    /*border-color:white;*/
     border-radius: 25px;
     width:22.75%;
     height:100%;
@@ -721,17 +709,16 @@ align-items:baseline;
     /*margin-bottom:auto;*/
     /*margin-left:auto;
     margin-right:auto;*/
-    /*box-shadow: 30px 30px 55px #F2F2F2;*/
     box-shadow: 6px 6px 4px  #F2F2F2;
-     /*test
-     box-sizing: border-box;
-     width: 24%;
-     border: solid #5B6DCD 10px;
-     padding: 5px;
-     test*/
+    /*test
+    box-sizing: border-box;
+    width: 24%;
+    border: solid #5B6DCD 10px;
+    padding: 5px;
+    test*/
 }  
 
-.div_art_act:hover
+.div_activities:hover
 {
     color:  #0065FC;
     border:solid;
@@ -751,7 +738,7 @@ align-items:baseline;
     width:22.75%;  
 }
 
-.div_art_act_col
+.div_activities_column
 {
     background-color: white;
     /*border:solid;*/
@@ -774,7 +761,7 @@ align-items:baseline;
      test*/
 }  
 
-.div_art_act_col:hover
+.div_activities_column:hover
 {
     color:  #0065FC;
     border:solid;
@@ -792,7 +779,7 @@ align-items:baseline;
 .small_txt
 {
     padding-top:24px;
-    padding-left:15px;
+    padding-left:20px;
     height:10%;
 }
 
@@ -839,9 +826,13 @@ align-items:baseline;
     height:74.25%;
 }
 
+.pic_fit
+{
+    object-fit: cover;   
+}
+
 
 /* FOOTER ------------------------------------------------------*/
-/* contient l'ancienne et la nouvelle version  */
 
 footer
 {
@@ -856,7 +847,7 @@ footer
     flex-wrap:nowrap;
 }
 
-.foot_div
+.footer_div
 {
     /*background-color:yellow;
     border: solid lightgreen;*/
@@ -865,7 +856,7 @@ footer
     width:20%;
 }
 
-.foot_div ul
+.footer_div ul
 {
     display:flex;
     flex-direction: column;    
@@ -876,47 +867,43 @@ footer
     height: 50%; 
 }
 
-.foot_div ul li 
+.footer_div ul li 
 {
     /*border:solid red;*/
     width:100%;
     text-align: start;
     font-size:14px;
-    font-family: 'Raleway',sans-serif;
     padding-top:0px;   
     height:30px;
 }
 
-#sec_bottom .foot_div h3
+footer .footer_div h3
 {
     font-size:20px;
-    font-family: 'Raleway',sans-serif;
     font-weight: 600 ;  
     margin-bottom:25px; 
 }
 
-.foot_div p:hover
+.footer_div p:hover
 {
     color:#0065FC;
     font-weight:bold;
     cursor:pointer;
     font-size:18px;
-    font-family: 'Raleway',sans-serif;
     font-weight: 600 ;  
 }
 
-.foot_div nav ul li:hover
+.footer_div nav ul li:hover
 {
     border-top: hidden;
 }
 
-.foot_div nav ul li a:hover
+.footer_div nav ul li a:hover
 {
     color:#0065FC;
     font-weight:bold;
     /*cursor:pointer;*/
     font-size:18px;
-    font-family: 'Raleway',sans-serif;
     font-weight: 600 ;  
     border-top: hidden;
 }
