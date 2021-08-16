@@ -1,4 +1,4 @@
-@media screen and (max-width: 1040px) /* règles CSS pour les mobiles ici */
+@media screen and (max-width: 480px) /* règles CSS pour les mobiles ici */
 {
  
 /* ------- RESET ------- */
@@ -51,7 +51,7 @@ header
 .flex_box
 {
     display:flex;
-    justify-content:space-between;
+    justify-content:space-between; 
 }
 
 .div_logo
@@ -226,7 +226,7 @@ h1
     font-size:1.5rem;
     padding: 0px;
     flex-wrap: wrap;
-    align-content: left;
+    
     /*border:solid red;*/
 }
 
@@ -646,8 +646,6 @@ main
     /*padding-left:20px;*/
     padding-top:25px;
     padding-bottom:50px;
-    padding-left:auto;
-    padding-right:auto;
     display:flex;
     flex-direction: column;
     /*flex-wrap: nowrap;*/
@@ -812,7 +810,7 @@ border:solid black;*/
     height:100%;
     display:flex;
     justify-content: space-between;
-    align-items:space-between;
+    /*align-items:space-between;*/
     font-weight:bold;
     flex-direction: column;
 }
@@ -975,9 +973,9 @@ border:solid black;*/
     /*background-color: #00cafc;*/
     background-color: #F2F2F2;
     /*border:solid black;*/    
-    /*height:259px;*//* new RDX 210810  ===*/
-    height:575px;/* new RDX 210810  ===*/
-    /*margin: 80px auto 0px auto;*//* new RDX 210810  ===*/
+    /*height:259px;*/
+    /*max-height:575px;*/ max-height:620px;
+    /*margin: 80px auto 0px auto;*/
     margin: 90px auto 0px 0px;/* new RDX 210810  ===*/
     /*max-width: 1440px;*//*new RDX 210810 ====*/
     max-width:375px;
@@ -1014,6 +1012,7 @@ border:solid black;*/
     font-size:14px;
     font-family: 'Raleway',sans-serif;
     padding-top:0px;   
+    padding-bottom:20px; 
     height:30px;
 }
 
