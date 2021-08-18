@@ -1,4 +1,4 @@
- 
+
 *
 {box-sizing: border-box;
 }
@@ -428,7 +428,7 @@ main
 .class_accommodation_marseille
 {
     background-color: white;
-    border:solid;
+    border:5px solid;
     border-color: white;
     border-radius: 25px;
     width:31%;
@@ -579,7 +579,7 @@ main
     margin-left: auto;
     margin-right: auto;
     /*height:100%;*/   
-    border:solid;
+    border:5px solid;
     border-color: white; 
     display: flex;
     flex-direction: row;
@@ -673,8 +673,10 @@ main
 
 #article_activities h2
 {
-   font-size:22px;
-   font-weight: 600 ; 
+    font-size:22px;
+    font-weight: 600 ; 
+    /*border:solid red;*/
+    margin-bottom: 15px;
 }
 
 #section_activities
@@ -834,7 +836,7 @@ footer
     background-color: #F2F2F2;
     /*border:solid black;*/    
     max-height:259px;
-    margin: 80px auto 0px auto;
+    margin: 55px auto 0px auto;
     max-width: 1440px;
     justify-content: flex-start;  
     flex-wrap:nowrap;

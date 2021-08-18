@@ -152,7 +152,7 @@ li
 {
     order:1;
     /*background-color:deeppink;*/
-    margin-left:280px; 
+    margin-left:250px; 
     margin-top:40px;
     /*border:solid 2px purple;*/
     z-index:5;
@@ -203,7 +203,6 @@ h2
     /*border:solid orange;
     background-color: coral;*/ 
 }
-
 #search p
 {
     font-size:19px;
@@ -516,13 +515,15 @@ main
 .class_accommodation_marseille
 {
     background-color: white;
-    border:solid;
+    border:5px solid;
     border-color: white;
     border-radius: 25px;
     max-width:768px;
     width:95%;
-    max-height:195px;
-    height:100%;
+    /*max-height:195px;selon KM */
+    /*height:100%;*/
+    /*height:195px;*//* selon KM*/
+    height:245px;/* test rdx 20210818 */
     margin-top:0px;
     margin-left:auto;
     margin-right:auto;
@@ -537,6 +538,7 @@ main
 .class_accommodation_marseille p
 {
     padding-left:15px;
+    font-size: 14px;
 }
 
 .class_accommodation_marseille:hover
@@ -566,7 +568,7 @@ main
 .class_top
 {
     width:100%;
-    height:25%;
+    height:75%;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     /*background-color: white;*/
@@ -576,7 +578,7 @@ main
 .class_bottom
 {
     width:100%;
-    height:25%;
+    height:18%;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
     /*background-color: white;*/
@@ -673,7 +675,7 @@ border:solid black;*/
     padding-top:0px;
     margin-left: auto;
     margin-right: auto;
-    border:solid;
+    border:5px solid;
     border-color: white; 
     display: flex;
     flex-direction: row;
@@ -767,7 +769,7 @@ border:solid black;*/
     border-radius: 0px;  /*new RDX 210810 ===*/  
     padding:25px 0px 0px 20px; 
     margin-bottom: 0px;/*new RDX 210810 ===*/
-    margin-top:1500px;/*new RDX 210810 ===*/
+    margin-top:1800px;/*new RDX 210810 ===*/
     height:1288px;/*new RDX 210810 ====*/
     max-width:768px;
     width:100%;
