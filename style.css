@@ -970,6 +970,7 @@ footer
     flex-wrap: nowrap;
     align-content: flex-start;
     height: 50%; 
+    list-style: none; /* Remove list bullets */
 }
 
 .footer_div ul li 
