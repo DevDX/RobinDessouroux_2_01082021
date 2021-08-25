@@ -267,6 +267,7 @@
 
 #btn_search
 {
+    border:none;
     background-color: #0065FC;
     color:white;
     border-top-right-radius: 10px;

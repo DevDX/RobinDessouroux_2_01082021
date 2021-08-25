@@ -9,6 +9,7 @@ html, body, ul, li, h1, h2, h3, h4, p, img
 {
     margin: 0;
     padding: 0;
+    
 }
 
 body
@@ -17,6 +18,11 @@ body
     font-family: 'Raleway',sans-serif;
     max-width:1440px;
     margin:0 auto;
+    
+    /*https://stackoverflow.com/questions/9087651/disable-mouse-scroll-when-overflow-x-hidden-css-html/9399429#9399429
+    You can actually use this directly on body if you set overflow-x: hidden; and position: relative; on it – roborourke Feb 16 '14 at 18:33 
+    */
+    overflow-x: hidden;position:relative;
     
 }
 
@@ -950,6 +956,8 @@ footer
     max-width: 1440px;
     justify-content: flex-start;  
     flex-wrap:nowrap;
+    overflow-x: hidden;overflow-y: hidden;
+    text-decoration:none;
 }
 
 .footer_div

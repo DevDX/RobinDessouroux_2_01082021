@@ -267,6 +267,7 @@
 
 #btn_search
 {
+    border:none;
     background-color: #0065FC;
     color:white;
     border-top-right-radius: 10px;
@@ -335,6 +336,21 @@
     margin-right:auto;    
 }  
     
+    .circle_border
+{
+    border-radius: 50px;
+    background-color: #DEEBFF;
+    font-size: 23px;
+    /*border-color: #0065FC;*/
+    border-color:#F2F2F2;
+    padding-left:0;
+    color:#0065FC;
+    min-height:45px;
+    min-width:45px;
+    text-align:center;
+    padding-top: 10px;
+}
+    
     #div_child
 {
 order:4;
@@ -374,6 +390,7 @@ order:4;
     
 #div_dog p
 {
+    
     font-size:12px;   
 }
     
