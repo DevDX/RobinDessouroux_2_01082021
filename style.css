@@ -263,6 +263,7 @@ header
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     height:100%;
+    cursor:pointer;
     font-size:18px;
     font-weight: bold;
     width:135px;
