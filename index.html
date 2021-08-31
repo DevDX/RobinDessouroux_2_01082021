@@ -17,9 +17,9 @@
         <!-- CSS --> 
         <link rel="stylesheet" href="style.css">
          
-        <link rel="stylesheet" media="screen and (min-width:481px) and (max-width:1040px)" href="responsive_style_tablet.css"/>
+        <!--link rel="stylesheet" media="screen and (min-width:481px) and (max-width:1040px)" href="responsive_style_tablet.css"/-->
        
-        <link rel="stylesheet" media="screen and (max-width:480px)" href="responsive_style_mobile.css"/>
+        <!--link rel="stylesheet" media="screen and (max-width:480px)" href="responsive_style_mobile.css"/-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <!-- police Raleway -->      
@@ -121,7 +121,7 @@
                                     <img class="class_top pic_fit" src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge de la Cannebière">
                                     <div class="class_bottom">
                                         <p class="class_bold">Auberge de la Cannebière</p>
-                                        <p>Nuit à partir de <span class="class_bold">25€</span></p>
+                                        <p>Nuit à partir de &nbsp; <span class="class_bold">25€</span></p>
                                         <p>
                                         <i class="fas fa-star bckcol_blue"></i>
                                         <i class="fas fa-star bckcol_blue"></i>
@@ -182,7 +182,7 @@
                                     <img class="class_top pic_fit" src="./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier ">
                                     <div class="class_bottom">
                                         <p class="class_bold">Auberge le panier</p>
-                                        <p>Nuit à partir de <span class="class_bold">23€</span></p>
+                                        <p>Nuit à partir de &nbsp; <span class="class_bold">23€</span></p>
                                         <p>
                                         <i class="fas fa-star bckcol_blue"></i>
                                         <i class="fas fa-star bckcol_blue"></i>
@@ -299,29 +299,34 @@
 
                 <!-- Section activités ----------------------------------------------> 
                 <section id="section_activities">
-                    <div  class="div_activities"><img class="class_top big_pic pic_fit" src="./images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port"> 
-                        <div class="class_bottom small_txt"><p>Vieux Port</p></div>
-                    </div>
-                   
-                    <div class="flex_box_col">
-                        <div  id="div_pomeg" class="div_activities_column"><img class="class_top pic_pomeg pic_fit" src="./images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues"> 
-                            <div class="class_bottom small_txt"><p>Fort de Pomègues</p></div>
-                        </div>
-                        <div  id="div_frioul" class="div_activities_column"><img class="class_top pic_frioul pic_fit" src="./images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul"> 
-                            <div class="class_bottom small_txt"><p><span class="class_uppercase">î</span>les du Frioul</p></div>
-                        </div>
-                    </div>
                     
-                    <div  class="div_activities"><img class="class_top big_pic pic_fit" src="./images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques"> 
-                        <div class="class_bottom small_txt"><p>Parc National des Calanques</p></div>
+                    <div id="left_activities">
+                        <div  class="div_activities"><img class="class_top big_pic pic_fit" src="./images/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port"> 
+                            <div class="small_txt"><p>Vieux Port</p></div>
+                        </div>
+                    
+                        <div class="flex_box_col">
+                            <div  id="div_pomeg" class="div_activities_column"><img class="class_top pic_pomeg pic_fit" src="./images/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues"> 
+                                <div class="small_txt"><p>Fort de Pomègues</p></div>
+                            </div>
+                            <div  id="div_frioul" class="div_activities_column"><img class="class_top pic_frioul pic_fit" src="./images/activites/1_xlarge/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul"> 
+                                <div class="small_txt"><p><span class="class_uppercase">î</span>les du Frioul</p></div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="flex_box_col">
-                        <div  id="div_nd_garde" class="div_activities_column"><img class="class_top nd_garde pic_fit" src="./images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde"> 
-                            <div class="class_bottom small_txt"><p>Notre-Dame-de-la-Garde</p></div>
+                    <div id="right_activities">
+                        <div  class="div_activities"><img class="class_top big_pic pic_fit" src="./images/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques"> 
+                            <div class="small_txt"><p>Parc National des Calanques</p></div>
                         </div>
-                        <div  id="div_p_longchamp" class="div_activities_column"><img class="class_top p_longchamp pic_fit" src="./images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp"> 
-                            <div class="class_bottom small_txt"><p>Parc Longchamp</p></div>
+
+                        <div class="flex_box_col">
+                            <div  id="div_nd_garde" class="div_activities_column"><img class="class_top nd_garde pic_fit" src="./images/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde"> 
+                                <div class="small_txt"><p>Notre-Dame-de-la-Garde</p></div>
+                            </div>
+                            <div  id="div_p_longchamp" class="div_activities_column"><img class="class_top p_longchamp pic_fit" src="./images/activites/1_xlarge/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp"> 
+                                <div class="small_txt"><p>Parc Longchamp</p></div>
+                            </div>
                         </div>
                     </div>
                                     
