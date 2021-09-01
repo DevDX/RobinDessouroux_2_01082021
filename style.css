@@ -179,6 +179,10 @@ main
     
 }
 
+.dummy
+{
+    display:none;
+}
 
  /* SECTION SEARCH ------------------------------*/
 
@@ -588,7 +592,7 @@ padding-top:3px;
 {
     background-color: white;
     border:5px solid;
-    border-color: white;
+    /*border-color: white;*/ border-color:transparent;
     border-radius: 25px; 
     max-width:248px;
     min-width:232px;
@@ -813,7 +817,7 @@ p.class_bold /*workaround  bug in chrome */
     margin-right: auto;
     /*height:100%;*/   
     border:5px solid;
-    border-color: white; 
+    /*border-color: white; */ border-color:transparent;
     display: flex;
     flex-direction: row;
     margin-top:19px;
