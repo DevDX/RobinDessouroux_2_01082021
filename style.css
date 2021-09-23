@@ -75,16 +75,14 @@ header
 
 .div_logo
 {
-    /*max-height:80px;rdx*/   
-    /*padding-top: 30px;*/ padding-top:50px;   
+    padding-top:50px;   
     position:relative;
-    /*min-width:95px;   */
 }
 
 #logo_reservia
 {
     width:100%;  min-width:95px;  
-    height:100%;height:29px;/*rdx*/
+    height:100%;height:29px;
     margin:0;
     font-size: 15px;
 }
@@ -182,7 +180,7 @@ header
 
 #h1 h1
 {
-    font-size:26px;font-size:20px;/*test04092021*/
+    font-size:20px;
     font-weight: 700 ;
     margin-bottom: 9px;       
 }
@@ -348,7 +346,6 @@ header
 {
     display: flex; max-width:152px;
     height: 49px;
-    /*rdxmin-width: 138px;*/
 }
 #div_child p
 {
@@ -403,7 +400,6 @@ header
 {
     margin-left:15px;
     margin-top:2px;
-    /*test04092021*/
     font-size:15px;
 }
 
@@ -781,7 +777,7 @@ p.class_bold /*workaround  bug in chrome */
     gap:40px;
     margin-left: auto;
     margin-right: auto;
-    /*à vérifier, si utile rdx*/ height:450px;
+    height:450px;
 }
 
 #right_activities
@@ -793,7 +789,7 @@ p.class_bold /*workaround  bug in chrome */
     gap:40px;
     margin-left: auto;
     margin-right: auto;
-    /*à vérifier, si utile rdx*/ height:450px;
+    height:450px;
 }
 
 .div_activities
@@ -1085,8 +1081,7 @@ footer .footer_div h2
 
     .div_links nav ul
     {
-        /*max-width:480px;*/
-        min-width: 180px;/*rdx*/
+        min-width: 180px;
         min-height:95px;
         height:100%;
         width:100%;
@@ -1136,7 +1131,6 @@ footer .footer_div h2
         margin-top: 44px;
         margin-left:auto;margin-right:0;
         padding-left:0px;
-        /*position:relative; rdx */
         height:33px;
     }
         
@@ -1249,7 +1243,7 @@ footer .footer_div h2
         padding-right: 20px;
         padding-left:20px;
         margin-bottom: 5px;
-        margin-top:0px;/*rdx*/
+        margin-top:0px;
         padding-top:0;
     }
     
